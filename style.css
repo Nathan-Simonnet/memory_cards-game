@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   user-select: none;
 }
 
@@ -67,4 +67,33 @@ body {
 .card-container.flipped {
 transform: rotateY(180deg)
   /* animation: rotateAnim 0.6s ease-out forwards;  */
+}
+
+
+#spam-mode{
+  position:absolute;
+  top: 12px;
+  left: 12px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background:black;
+  color: white;
+  padding:6px;
+  border-radius:12px;
+  cursor: pointer;
+}
+
+#spam-mode:hover{
+outline: 1px solid white;
+}
+#spam-mode:active{
+  transform: scale(0.9);
+}
+
+#spam-mode.activated{
+  background:white;
+  color: black;
 }
