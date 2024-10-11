@@ -4,6 +4,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: 1px solid red;
+  user-select: none;
 }
 
 body {
@@ -11,4 +13,58 @@ body {
   font-family: lato, Helvetica, sans-serif;
   background: linear-gradient(to right, #d17608, #ec3503);
   padding: clamp(20px, 5vw, 50px) 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+
+
+#cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 6px;
+  /* width: 418px; */
+  width: 420px;
+}
+
+/* @keyframes rotateAnim {
+  from{
+    transform: rotateY(0)
+  }
+  to{
+    transform: rotateY(180deg)
+  }
+} */
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
+  height: 100px;
+
+  cursor: pointer;
+
+  transform: rotateY(0);
+  transition: 0.6s;
+
+  img{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.card-container.flipped {
+transform: rotateY(180deg)
+  /* animation: rotateAnim 0.6s ease-out forwards;  */
 }
