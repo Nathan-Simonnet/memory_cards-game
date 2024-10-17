@@ -6,26 +6,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Memory game</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 </head>
 
 <body>
-<div id="spam-mode">spam mode</div>
+  <div id="spam-mode" tabindex="0">Fast mode</div>
   <h1>Jeu des <span>cartes mémoires</span></h1>
-  <p>Tentez de gagner avec le moins d'essais possible.</p>
-  <p>Nombre de coups: <span id="scoreDisplay">0</span></p>
+  <p class="advice">Tentez de gagner avec le moins d'essais possible.</p>
+  <div class="score">Nombre de coups : <span id="scoreDisplay">0</span><div id="reset" tabindex="0"><i class="fa-solid fa-arrow-rotate-left"></i></div></div>
 
-  <div id="cards-container">
+  <div class="grid">
 
-    <!-- <div class="card-container" tabindex="0">
-      <img src="ressources/question.svg" alt="image of ">
+    <!-- <div class="card" data-attr="banana">
+      <div class="double-face">
+        <div class="face front">
+          <img src="ressources/banana.svg" />
+        </div>
+        <div class="face back">
+          <img src="ressources/question.svg" class="back-img" />
+        </div>
+      </div>
+    </div>
+    <div class="card" data-attr="apple">
+      <div class="double-face">
+        <div class="face front">
+          <img src="ressources/apple.svg" />
+        </div>
+        <div class="face face back"><img src="ressources/question.svg" class="back-img" /></div>
+      </div>
+    </div>
+    <div class="card" data-attr="apple">
+      <div class="double-face">
+        <div class="face front">
+          <img src="ressources/apple.svg" alt="apple" />
+        </div>
+        <div class="face back"><img src="ressources/question.svg" class="back-img" /></div>
+      </div>
+    </div>
+    <div class="card" data-attr="banana">
+      <div class="double-face">
+        <div class="face front">
+          <img src="ressources/banana.svg" />
+        </div>
+        <div class="face back"><img src="ressources/question.svg" class="back-img" /></div>
+      </div>
+    </div>
+    <div class="card" data-attr="brocoli">
+      <div class="double-face">
+        <div class="face front">
+          <img src="ressources/brocoli.svg" />
+        </div>
+        <div class="face back"><img src="ressources/question.svg" class="back-img" /></div>
+      </div>
+    </div>
+    <div class="card" data-attr="cherry">
+      <div class="double-face">
+        <div class="face front">
+          <img src="ressources/cherry.svg" />
+        </div>
+        <div class="face back"><img src="ressources/question.svg" class="back-img" /></div>
+      </div>
+    </div>
+    <div class="card" data-attr="pepper">
+      <div class="double-face">
+        <div class="face front">
+          <img src="ressources/pepper.svg" />
+        </div>
+        <div class="face back"><img src="ressources/question.svg" class="back-img" /></div>
+      </div>
+    </div>
+    <div class="card" data-attr="pepper">
+      <div class="double-face">
+        <div class="face front">
+          <img src="ressources/pepper.svg" />
+        </div>
+        <div class="face back"><img src="ressources/question.svg" class="back-img" /></div>
+      </div>
+    </div>
+    <div class="card" data-attr="cherry">
+      <div class="double-face">
+        <div class="face front">
+          <img src="ressources/cherry.svg" />
+        </div>
+        <div class="face back"><img src="ressources/question.svg" class="back-img" /></div>
+      </div>
+    </div>
+    <div class="card" data-attr="brocoli">
+      <div class="double-face">
+        <div class="face front">
+          <img src="ressources/brocoli.svg" />
+        </div>
+        <div class="face back"><img src="ressources/question.svg" class="back-img" /></div>
+      </div>
+    </div>
+    <div class="card" data-attr="straw">
+      <div class="double-face">
+        <div class="face front">
+          <img src="ressources/straw.svg" />
+        </div>
+        <div class="face back"><img src="ressources/question.svg" class="back-img" /></div>
+      </div>
+    </div>
+    <div class="card" data-attr="straw">
+      <div class="double-face">
+        <div class="face front">
+          <img src="ressources/straw.svg" />
+        </div>
+        <div class="face back"><img src="ressources/question.svg" class="back-img" /></div>
+      </div>
     </div> -->
-
   </div>
+
   <script src="app.js"></script>
 </body>
 
