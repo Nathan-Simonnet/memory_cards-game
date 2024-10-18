@@ -16,112 +16,142 @@
 </head>
 
 <body>
-  <div id="spam-mode" tabindex="0">Fast mode</div>
+  <div id="spam-mode" tabindex="0" aria-label="Toggle Fast Mode">Fast mode</div>
   <h1>Jeu des <span>cartes mémoires</span></h1>
   <p class="advice">Tentez de gagner avec le moins d'essais possible.</p>
-  <div class="score">Nombre de coups : <span id="scoreDisplay">0</span><div id="reset" tabindex="0"><i class="fa-solid fa-arrow-rotate-left"></i></div></div>
+  <div class="score">Nombre de coups : <span id="scoreDisplay" aria-label="Current Score" aria-live="polite">0</span><div id="reset" tabindex="0" aria-label="Reset Game"><i class="fa-solid fa-arrow-rotate-left"></i></div></div>
 
-  <div class="grid">
+  <div class="grid" aria-label="Memory Card Game">
 
-    <!-- <div class="card" data-attr="banana">
+    <div class="card" tabindex="0" data-attr="banana">
       <div class="double-face">
-        <div class="face front">
+        <div aria-hidden="true" class="face front">
           <img src="ressources/banana.svg" />
         </div>
-        <div class="face back">
-          <img src="ressources/question.svg" class="back-img" />
+        <div aria-hidden="true" class="face back">
+          <img src="ressources/question.svg" class="back-img" alt="Card back" />
         </div>
       </div>
     </div>
-    <div class="card" data-attr="apple">
+    <div class="card" tabindex="0" data-attr="apple">
       <div class="double-face">
-        <div class="face front">
+        <div aria-hidden="true" class="face front">
           <img src="ressources/apple.svg" />
         </div>
-        <div class="face face back"><img src="ressources/question.svg" class="back-img" /></div>
+        <div aria-hidden="true" class="face face back"><img src="ressources/question.svg" class="back-img" alt="Card back" /></div>
       </div>
     </div>
-    <div class="card" data-attr="apple">
+    <div class="card" tabindex="0" data-attr="apple">
       <div class="double-face">
-        <div class="face front">
+        <div aria-hidden="true" class="face front">
           <img src="ressources/apple.svg" alt="apple" />
         </div>
-        <div class="face back"><img src="ressources/question.svg" class="back-img" /></div>
+        <div aria-hidden="true" class="face back"><img src="ressources/question.svg" class="back-img" alt="Card back" /></div>
       </div>
     </div>
-    <div class="card" data-attr="banana">
+    <div class="card" tabindex="0" data-attr="banana">
       <div class="double-face">
-        <div class="face front">
+        <div aria-hidden="true" class="face front">
           <img src="ressources/banana.svg" />
         </div>
-        <div class="face back"><img src="ressources/question.svg" class="back-img" /></div>
+        <div aria-hidden="true" class="face back"><img src="ressources/question.svg" class="back-img" alt="Card back" /></div>
       </div>
     </div>
-    <div class="card" data-attr="brocoli">
+    <div class="card" tabindex="0" data-attr="brocoli">
       <div class="double-face">
-        <div class="face front">
+        <div aria-hidden="true" class="face front">
           <img src="ressources/brocoli.svg" />
         </div>
-        <div class="face back"><img src="ressources/question.svg" class="back-img" /></div>
+        <div aria-hidden="true" class="face back"><img src="ressources/question.svg" class="back-img" alt="Card back" /></div>
       </div>
     </div>
-    <div class="card" data-attr="cherry">
+    <div class="card" tabindex="0" data-attr="cherry">
       <div class="double-face">
-        <div class="face front">
+        <div aria-hidden="true" class="face front">
           <img src="ressources/cherry.svg" />
         </div>
-        <div class="face back"><img src="ressources/question.svg" class="back-img" /></div>
+        <div aria-hidden="true" class="face back"><img src="ressources/question.svg" class="back-img" alt="Card back" /></div>
       </div>
     </div>
-    <div class="card" data-attr="pepper">
+    <div class="card" tabindex="0" data-attr="pepper">
       <div class="double-face">
-        <div class="face front">
+        <div aria-hidden="true" class="face front">
           <img src="ressources/pepper.svg" />
         </div>
-        <div class="face back"><img src="ressources/question.svg" class="back-img" /></div>
+        <div aria-hidden="true" class="face back"><img src="ressources/question.svg" class="back-img" alt="Card back" /></div>
       </div>
     </div>
-    <div class="card" data-attr="pepper">
+    <div class="card" tabindex="0" data-attr="pepper">
       <div class="double-face">
-        <div class="face front">
+        <div aria-hidden="true" class="face front">
           <img src="ressources/pepper.svg" />
         </div>
-        <div class="face back"><img src="ressources/question.svg" class="back-img" /></div>
+        <div aria-hidden="true" class="face back"><img src="ressources/question.svg" class="back-img" alt="Card back" /></div>
       </div>
     </div>
-    <div class="card" data-attr="cherry">
+    <div class="card" tabindex="0" data-attr="cherry">
       <div class="double-face">
-        <div class="face front">
+        <div aria-hidden="true" class="face front">
           <img src="ressources/cherry.svg" />
         </div>
-        <div class="face back"><img src="ressources/question.svg" class="back-img" /></div>
+        <div aria-hidden="true" class="face back"><img src="ressources/question.svg" class="back-img" alt="Card back" /></div>
       </div>
     </div>
-    <div class="card" data-attr="brocoli">
+    <div class="card" tabindex="0" data-attr="brocoli">
       <div class="double-face">
-        <div class="face front">
+        <div aria-hidden="true" class="face front">
           <img src="ressources/brocoli.svg" />
         </div>
-        <div class="face back"><img src="ressources/question.svg" class="back-img" /></div>
+        <div aria-hidden="true" class="face back"><img src="ressources/question.svg" class="back-img" alt="Card back" /></div>
       </div>
     </div>
-    <div class="card" data-attr="straw">
+    <div class="card" tabindex="0" data-attr="straw">
       <div class="double-face">
-        <div class="face front">
+        <div aria-hidden="true" class="face front">
           <img src="ressources/straw.svg" />
         </div>
-        <div class="face back"><img src="ressources/question.svg" class="back-img" /></div>
+        <div aria-hidden="true" class="face back"><img src="ressources/question.svg" class="back-img" alt="Card back" /></div>
       </div>
     </div>
-    <div class="card" data-attr="straw">
+    <div class="card" tabindex="0" data-attr="straw">
       <div class="double-face">
-        <div class="face front">
+        <div aria-hidden="true" class="face front">
           <img src="ressources/straw.svg" />
         </div>
-        <div class="face back"><img src="ressources/question.svg" class="back-img" /></div>
+        <div aria-hidden="true" class="face back"><img src="ressources/question.svg" class="back-img" alt="Card back" /></div>
       </div>
-    </div> -->
+    </div>
   </div>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script>
+    // Create a scene
+    const scene = new THREE.Scene();
+    // Create a camera
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    // Create a WebGL renderer
+    const renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+    
+    // Create a cube
+    const geometry = new THREE.BoxGeometry();
+    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+    const cube = new THREE.Mesh(geometry, material);
+    scene.add(cube);
+    
+    // Move the camera away so we can see the cube
+    camera.position.z = 5;
+    
+    // Create an animation loop
+    function animate() {
+      requestAnimationFrame(animate);
+      cube.rotation.x += 0.05;
+      cube.rotation.y += 0.10;
+      renderer.render(scene, camera);
+    }
+    animate();
+  </script> -->
 
   <script src="app.js"></script>
 </body>

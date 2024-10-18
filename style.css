@@ -4,13 +4,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   user-select: none;
 }
 
 
 body {
   min-height: 100vh;
+  margin-bottom: 48px;
   font-family: lato, Helvetica, sans-serif;
   background: linear-gradient(to right, #d17608, #ec3503);
   padding: clamp(20px, 5vw, 50px) 20px 10px;
@@ -61,12 +62,11 @@ h1 span {
   transition: transform 0.2s ease-out;
 }
 
-.card:hover {
+.card:hover, .card:focus {
   transform: scale(1.02);
 }
 
 .double-face {
-
   position: relative;
   width: 100%;
   height: 100%;
